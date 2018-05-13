@@ -1,0 +1,43 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+# My igonore
+ipch/
+.vs/
+*.db
+*.sdf
+*.dat
+*.opendb
+*.log
+.idea
+
+hik_client.dll
+hik_client.exp
+hik_client.ilk
+hik_client.lib
+hik_client.pch
+hik_client.pdb
+CL.read.1.tlog
+vc140.idb
+vc140.pdb
