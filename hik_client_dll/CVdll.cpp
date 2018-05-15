@@ -23,26 +23,26 @@ int main()
 
 	typedef struct tagBITMAPFILEHEADER
 	{
-		unsigned short  bfType; //2 Î»Í¼ÎÄ¼şµÄÀàĞÍ£¬±ØĞëÎª¡°BM¡±  
-		unsigned long bfSize; //4 Î»Í¼ÎÄ¼şµÄ´óĞ¡£¬ÒÔ×Ö½ÚÎªµ¥Î»  
-		unsigned short bfReserved1; //2 Î»Í¼ÎÄ¼ş±£Áô×Ö£¬±ØĞëÎª0  
-		unsigned short bfReserved2; //2 Î»Í¼ÎÄ¼ş±£Áô×Ö£¬±ØĞëÎª0  
-		unsigned long bfOffBits; //4 Î»Í¼Êı¾İµÄÆğÊ¼Î»ÖÃ£¬ÒÔÏà¶ÔÓÚÎ»Í¼ÎÄ¼şÍ·µÄÆ«ÒÆÁ¿±íÊ¾£¬ÒÔ×Ö½ÚÎªµ¥Î»  
-	} BITMAPFILEHEADER;//¸Ã½á¹¹Õ¼¾İ14¸ö×Ö½Ú¡£  
+		unsigned short  bfType; //2 ä½å›¾æ–‡ä»¶çš„ç±»å‹ï¼Œå¿…é¡»ä¸ºâ€œBMâ€  
+		unsigned long bfSize; //4 ä½å›¾æ–‡ä»¶çš„å¤§å°ï¼Œä»¥å­—èŠ‚ä¸ºå•ä½  
+		unsigned short bfReserved1; //2 ä½å›¾æ–‡ä»¶ä¿ç•™å­—ï¼Œå¿…é¡»ä¸º0  
+		unsigned short bfReserved2; //2 ä½å›¾æ–‡ä»¶ä¿ç•™å­—ï¼Œå¿…é¡»ä¸º0  
+		unsigned long bfOffBits; //4 ä½å›¾æ•°æ®çš„èµ·å§‹ä½ç½®ï¼Œä»¥ç›¸å¯¹äºä½å›¾æ–‡ä»¶å¤´çš„åç§»é‡è¡¨ç¤ºï¼Œä»¥å­—èŠ‚ä¸ºå•ä½  
+	} BITMAPFILEHEADER;//è¯¥ç»“æ„å æ®14ä¸ªå­—èŠ‚ã€‚  
 
 	typedef struct tagBITMAPINFOHEADER {
-		unsigned long biSize; //4 ±¾½á¹¹ËùÕ¼ÓÃ×Ö½ÚÊı  
-		long biWidth; //4 Î»Í¼µÄ¿í¶È£¬ÒÔÏñËØÎªµ¥Î»  
-		long biHeight; //4 Î»Í¼µÄ¸ß¶È£¬ÒÔÏñËØÎªµ¥Î»  
-		unsigned short biPlanes; //2 Ä¿±êÉè±¸µÄÆ½ÃæÊı²»Çå£¬±ØĞëÎª1  
-		unsigned short biBitCount;//2 Ã¿¸öÏñËØËùĞèµÄÎ»Êı£¬±ØĞëÊÇ1(Ë«É«), 4(16É«)£¬8(256É«)»ò24(Õæ²ÊÉ«)Ö®Ò»  
-		unsigned long biCompression; //4 Î»Í¼Ñ¹ËõÀàĞÍ£¬±ØĞëÊÇ 0(²»Ñ¹Ëõ),1(BI_RLE8Ñ¹ËõÀàĞÍ)»ò2(BI_RLE4Ñ¹ËõÀàĞÍ)Ö®Ò»  
-		unsigned long biSizeImage; //4 Î»Í¼µÄ´óĞ¡£¬ÒÔ×Ö½ÚÎªµ¥Î»  
-		long biXPelsPerMeter; //4 Î»Í¼Ë®Æ½·Ö±æÂÊ£¬Ã¿Ã×ÏñËØÊı  
-		long biYPelsPerMeter; //4 Î»Í¼´¹Ö±·Ö±æÂÊ£¬Ã¿Ã×ÏñËØÊı  
-		unsigned long biClrUsed;//4 Î»Í¼Êµ¼ÊÊ¹ÓÃµÄÑÕÉ«±íÖĞµÄÑÕÉ«Êı  
-		unsigned long biClrImportant;//4 Î»Í¼ÏÔÊ¾¹ı³ÌÖĞÖØÒªµÄÑÕÉ«Êı  
-	} BITMAPINFOHEADER;//¸Ã½á¹¹Õ¼¾İ40¸ö×Ö½Ú¡£  
+		unsigned long biSize; //4 æœ¬ç»“æ„æ‰€å ç”¨å­—èŠ‚æ•°  
+		long biWidth; //4 ä½å›¾çš„å®½åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½  
+		long biHeight; //4 ä½å›¾çš„é«˜åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½  
+		unsigned short biPlanes; //2 ç›®æ ‡è®¾å¤‡çš„å¹³é¢æ•°ä¸æ¸…ï¼Œå¿…é¡»ä¸º1  
+		unsigned short biBitCount;//2 æ¯ä¸ªåƒç´ æ‰€éœ€çš„ä½æ•°ï¼Œå¿…é¡»æ˜¯1(åŒè‰²), 4(16è‰²)ï¼Œ8(256è‰²)æˆ–24(çœŸå½©è‰²)ä¹‹ä¸€  
+		unsigned long biCompression; //4 ä½å›¾å‹ç¼©ç±»å‹ï¼Œå¿…é¡»æ˜¯ 0(ä¸å‹ç¼©),1(BI_RLE8å‹ç¼©ç±»å‹)æˆ–2(BI_RLE4å‹ç¼©ç±»å‹)ä¹‹ä¸€  
+		unsigned long biSizeImage; //4 ä½å›¾çš„å¤§å°ï¼Œä»¥å­—èŠ‚ä¸ºå•ä½  
+		long biXPelsPerMeter; //4 ä½å›¾æ°´å¹³åˆ†è¾¨ç‡ï¼Œæ¯ç±³åƒç´ æ•°  
+		long biYPelsPerMeter; //4 ä½å›¾å‚ç›´åˆ†è¾¨ç‡ï¼Œæ¯ç±³åƒç´ æ•°  
+		unsigned long biClrUsed;//4 ä½å›¾å®é™…ä½¿ç”¨çš„é¢œè‰²è¡¨ä¸­çš„é¢œè‰²æ•°  
+		unsigned long biClrImportant;//4 ä½å›¾æ˜¾ç¤ºè¿‡ç¨‹ä¸­é‡è¦çš„é¢œè‰²æ•°  
+	} BITMAPINFOHEADER;//è¯¥ç»“æ„å æ®40ä¸ªå­—èŠ‚ã€‚  
 
 	int nWidth = 0;
 	int nHeight = 0;
@@ -62,7 +62,7 @@ int main()
 		printf("%s\n", csFileName);
 
 		FILE *fp;
-		if ((fp = fopen(csFileName, "rb")) == NULL)  //ÒÔ¶ş½øÖÆµÄ·½Ê½´ò¿ªÎÄ¼ş  
+		if ((fp = fopen(csFileName, "rb")) == NULL)  //ä»¥äºŒè¿›åˆ¶çš„æ–¹å¼æ‰“å¼€æ–‡ä»¶  
 		{
 			return FALSE;
 		}
@@ -75,15 +75,15 @@ int main()
 			return 0;
 		}
 
-		if (fseek(fp, sizeof(BITMAPFILEHEADER), 0))  //Ìø¹ıBITMAPFILEHEADE  
+		if (fseek(fp, sizeof(BITMAPFILEHEADER), 0))  //è·³è¿‡BITMAPFILEHEADE  
 		{
 			return FALSE;
 		}
 		BITMAPINFOHEADER infoHead;
-		fread(&infoHead, sizeof(BITMAPINFOHEADER), 1, fp);   //´ÓfpÖĞ¶ÁÈ¡BITMAPINFOHEADERĞÅÏ¢µ½infoHeadÖĞ,Í¬Ê±fpµÄÖ¸ÕëÒÆ¶¯  
+		fread(&infoHead, sizeof(BITMAPINFOHEADER), 1, fp);   //ä»fpä¸­è¯»å–BITMAPINFOHEADERä¿¡æ¯åˆ°infoHeadä¸­,åŒæ—¶fpçš„æŒ‡é’ˆç§»åŠ¨  
 		nWidth = infoHead.biWidth;
 		nHeight = infoHead.biHeight;
-		int linebyte = (nWidth * 24 / 8 + 3) / 4 * 4; //¼ÆËãÃ¿ĞĞµÄ×Ö½ÚÊı£¬24£º¸ÃÍ¼Æ¬ÊÇ24Î»µÄbmpÍ¼£¬3£ºÈ·±£²»¶ªÊ§ÏñËØ  
+		int linebyte = (nWidth * 24 / 8 + 3) / 4 * 4; //è®¡ç®—æ¯è¡Œçš„å­—èŠ‚æ•°ï¼Œ24ï¼šè¯¥å›¾ç‰‡æ˜¯24ä½çš„bmpå›¾ï¼Œ3ï¼šç¡®ä¿ä¸ä¸¢å¤±åƒç´   
 
 													  //cout<<bmpwidth<<" "<<bmpheight<<endl;  
 		nDataLen = linebyte*nHeight;
@@ -94,14 +94,14 @@ int main()
 	printf("file ok\n");
 	av_register_all();
 	avcodec_register_all();
-	AVFrame *m_pRGBFrame = new AVFrame[1];  //RGBÖ¡Êı¾İ      
-	AVFrame *m_pYUVFrame = new AVFrame[1];;  //YUVÖ¡Êı¾İ    
+	AVFrame *m_pRGBFrame = new AVFrame[1];  //RGBå¸§æ•°æ®      
+	AVFrame *m_pYUVFrame = new AVFrame[1];;  //YUVå¸§æ•°æ®    
 	AVCodecContext *c = NULL;
 	AVCodecContext *in_c = NULL;
-	AVCodec *pCodecH264; //±àÂëÆ÷    
+	AVCodec *pCodecH264; //ç¼–ç å™¨    
 	uint8_t * yuv_buff;//    
 
-					   //²éÕÒh264±àÂëÆ÷    
+					   //æŸ¥æ‰¾h264ç¼–ç å™¨    
 	pCodecH264 = avcodec_find_encoder(AV_CODEC_ID_H264);
 
 
@@ -121,18 +121,18 @@ int main()
 	c->pix_fmt = AV_PIX_FMT_YUV420P;//PIX_FMT_RGB24;    
 
 									//av_opt_set(c->priv_data, /*"preset"*/"libvpx-1080p.ffpreset", /*"slow"*/NULL, 0);    
-									//´ò¿ª±àÂëÆ÷    
+									//æ‰“å¼€ç¼–ç å™¨    
 	if (avcodec_open2(c, pCodecH264, NULL)<0)
-		printf("²»ÄÜ´ò¿ª±àÂë¿â");
+		printf("ä¸èƒ½æ‰“å¼€ç¼–ç åº“");
 
 	int size = c->width * c->height;
 
 	yuv_buff = (uint8_t *)malloc((size * 3) / 2); // size for YUV 420     
 
-												  //½«rgbÍ¼ÏñÊı¾İÌî³ärgbÖ¡    
+												  //å°†rgbå›¾åƒæ•°æ®å¡«å……rgbå¸§    
 	uint8_t * rgb_buff = new uint8_t[nDataLen];
 
-	//Í¼Ïó±àÂë    
+	//å›¾è±¡ç¼–ç     
 	int outbuf_size = 100000;
 	uint8_t * outbuf = (uint8_t*)malloc(outbuf_size);
 	int u_size = 0;
@@ -145,15 +145,15 @@ int main()
 	exit(1);
 	}*/
 
-	//³õÊ¼»¯SwsContext    
+	//åˆå§‹åŒ–SwsContext    
 	SwsContext * scxt = sws_getContext(c->width, c->height, AV_PIX_FMT_BGR24, c->width, c->height, AV_PIX_FMT_YUV420P, SWS_POINT, NULL, NULL, NULL);
 
 	AVPacket avpkt;
 
 	//-----lbg----------
 	AVOutputFormat *ofmt = NULL;
-	//ÊäÈë¶ÔÓ¦Ò»¸öAVFormatContext£¬Êä³ö¶ÔÓ¦Ò»¸öAVFormatContext  
-	//£¨Input AVFormatContext and Output AVFormatContext£©  
+	//è¾“å…¥å¯¹åº”ä¸€ä¸ªAVFormatContextï¼Œè¾“å‡ºå¯¹åº”ä¸€ä¸ªAVFormatContext  
+	//ï¼ˆInput AVFormatContext and Output AVFormatContextï¼‰  
 	AVFormatContext  *ofmt_ctx = NULL;
 	//AVPacket pkt;
 	const char *in_filename, *out_filename;
@@ -162,17 +162,17 @@ int main()
 	int frame_index = 0;
 	int64_t start_time = 0;
 
-	//in_filename = "F:/FeigeDownload/007.avi";//ÊäÈëURL£¨Input file URL£©  
+	//in_filename = "F:/FeigeDownload/007.avi";//è¾“å…¥URLï¼ˆInput file URLï¼‰  
 	//in_filename  = "shanghai03_p.h264";  
 
-	out_filename = "rtsp://192.168.0.104/test1";//Êä³ö URL£¨Output URL£©[RTMP]  
-												//out_filename = "rtp://233.233.233.233:6666";//Êä³ö URL£¨Output URL£©[UDP]  
+	out_filename = "rtsp://192.168.0.104/test1";//è¾“å‡º URLï¼ˆOutput URLï¼‰[RTMP]  
+												//out_filename = "rtp://233.233.233.233:6666";//è¾“å‡º URLï¼ˆOutput URLï¼‰[UDP]  
 
 	av_register_all();
 	//Network  
 	avformat_network_init();
 
-	//Êä³ö£¨Output£©  
+	//è¾“å‡ºï¼ˆOutputï¼‰  
 
 	avformat_alloc_output_context2(&ofmt_ctx, NULL, "rtsp", out_filename); //RTMP  
 																		   //avformat_alloc_output_context2(&ofmt_ctx, NULL, "mpegts", out_filename);//UDP  
@@ -184,7 +184,7 @@ int main()
 	}
 	ofmt = ofmt_ctx->oformat;
 	//for (i = 0; i < ifmt_ctx->nb_streams; i++) {
-	//¸ù¾İÊäÈëÁ÷´´½¨Êä³öÁ÷£¨Create output AVStream according to input AVStream£©  
+	//æ ¹æ®è¾“å…¥æµåˆ›å»ºè¾“å‡ºæµï¼ˆCreate output AVStream according to input AVStreamï¼‰  
 	//AVStream *in_stream = ifmt_ctx->streams[i];
 	//AVStream *out_stream = avformat_new_stream(ofmt_ctx, in_stream->codec->codec);
 	AVStream *out_stream = avformat_new_stream(ofmt_ctx, pCodecH264);
@@ -193,7 +193,7 @@ int main()
 		ret = AVERROR_UNKNOWN;
 		goto end;
 	}
-	//¸´ÖÆAVCodecContextµÄÉèÖÃ£¨Copy the settings of AVCodecContext£©  
+	//å¤åˆ¶AVCodecContextçš„è®¾ç½®ï¼ˆCopy the settings of AVCodecContextï¼‰  
 	/*ret = avcodec_copy_context(out_stream->codec, in_stream->codec);
 	if (ret < 0) {
 	printf("Failed to copy context from input to output stream codec context\n");
@@ -207,7 +207,7 @@ int main()
 	//}
 	//Dump Format------------------  
 	av_dump_format(ofmt_ctx, 0, out_filename, 1);
-	//´ò¿ªÊä³öURL£¨Open output URL£©  
+	//æ‰“å¼€è¾“å‡ºURLï¼ˆOpen output URLï¼‰  
 	if (!(ofmt->flags & AVFMT_NOFILE)) {
 		ret = avio_open(&ofmt_ctx->pb, out_filename, AVIO_FLAG_WRITE);
 		if (ret < 0) {
@@ -215,7 +215,7 @@ int main()
 			goto end;
 		}
 	}
-	//Ğ´ÎÄ¼şÍ·£¨Write file header£©  
+	//å†™æ–‡ä»¶å¤´ï¼ˆWrite file headerï¼‰  
 
 	ret = avformat_write_header(ofmt_ctx, NULL);
 	if (ret < 0) {
@@ -236,7 +236,7 @@ int main()
 		printf("%s\n", csFileName);
 
 		FILE *fp;
-		if ((fp = fopen(csFileName, "rb")) == NULL)  //ÒÔ¶ş½øÖÆµÄ·½Ê½´ò¿ªÎÄ¼ş  
+		if ((fp = fopen(csFileName, "rb")) == NULL)  //ä»¥äºŒè¿›åˆ¶çš„æ–¹å¼æ‰“å¼€æ–‡ä»¶  
 		{
 			return FALSE;
 		}
@@ -249,15 +249,15 @@ int main()
 			return 0;
 		}
 
-		if (fseek(fp, sizeof(BITMAPFILEHEADER), 0))  //Ìø¹ıBITMAPFILEHEADE  
+		if (fseek(fp, sizeof(BITMAPFILEHEADER), 0))  //è·³è¿‡BITMAPFILEHEADE  
 		{
 			return FALSE;
 		}
 		BITMAPINFOHEADER infoHead;
-		fread(&infoHead, sizeof(BITMAPINFOHEADER), 1, fp);   //´ÓfpÖĞ¶ÁÈ¡BITMAPINFOHEADERĞÅÏ¢µ½infoHeadÖĞ,Í¬Ê±fpµÄÖ¸ÕëÒÆ¶¯  
+		fread(&infoHead, sizeof(BITMAPINFOHEADER), 1, fp);   //ä»fpä¸­è¯»å–BITMAPINFOHEADERä¿¡æ¯åˆ°infoHeadä¸­,åŒæ—¶fpçš„æŒ‡é’ˆç§»åŠ¨  
 		nWidth = infoHead.biWidth;
 		nHeight = infoHead.biHeight;
-		int linebyte = (nWidth * 24 / 8 + 3) / 4 * 4; //¼ÆËãÃ¿ĞĞµÄ×Ö½ÚÊı£¬24£º¸ÃÍ¼Æ¬ÊÇ24Î»µÄbmpÍ¼£¬3£ºÈ·±£²»¶ªÊ§ÏñËØ  
+		int linebyte = (nWidth * 24 / 8 + 3) / 4 * 4; //è®¡ç®—æ¯è¡Œçš„å­—èŠ‚æ•°ï¼Œ24ï¼šè¯¥å›¾ç‰‡æ˜¯24ä½çš„bmpå›¾ï¼Œ3ï¼šç¡®ä¿ä¸ä¸¢å¤±åƒç´   
 
 													  //cout<<bmpwidth<<" "<<bmpheight<<endl;  
 		nDataLen = linebyte*nHeight;
@@ -269,10 +269,10 @@ int main()
 
 		avpicture_fill((AVPicture*)m_pRGBFrame, (uint8_t*)rgb_buff, AV_PIX_FMT_RGB24, nWidth, nHeight);
 
-		//½«YUV buffer Ìî³äYUV Frame    
+		//å°†YUV buffer å¡«å……YUV Frame    
 		avpicture_fill((AVPicture*)m_pYUVFrame, (uint8_t*)yuv_buff, AV_PIX_FMT_YUV420P, nWidth, nHeight);
 
-		// ·­×ªRGBÍ¼Ïñ    
+		// ç¿»è½¬RGBå›¾åƒ    
 		m_pRGBFrame->data[0] += m_pRGBFrame->linesize[0] * (nHeight - 1);
 		m_pRGBFrame->linesize[0] *= -1;
 		m_pRGBFrame->data[1] += m_pRGBFrame->linesize[1] * (nHeight / 2 - 1);
@@ -281,7 +281,7 @@ int main()
 		m_pRGBFrame->linesize[2] *= -1;
 
 
-		//½«RGB×ª»¯ÎªYUV    
+		//å°†RGBè½¬åŒ–ä¸ºYUV    
 		sws_scale(scxt, m_pRGBFrame->data, m_pRGBFrame->linesize, 0, c->height, m_pYUVFrame->data, m_pYUVFrame->linesize);
 
 		int got_packet_ptr = 0;
@@ -289,6 +289,7 @@ int main()
 		avpkt.data = outbuf;
 		avpkt.size = outbuf_size;
 		u_size = avcodec_encode_video2(c, &avpkt, m_pYUVFrame, &got_packet_ptr);
+		m_pYUVFrame->pts++;
 		if (u_size == 0)
 		{
 
@@ -297,7 +298,7 @@ int main()
 			//avpkt.duration = av_rescale_q(avpkt.duration, c->time_base, out_stream->time_base);
 
 
-			time_t tt = time(NULL);//Õâ¾ä·µ»ØµÄÖ»ÊÇÒ»¸öÊ±¼äcuo
+			time_t tt = time(NULL);//è¿™å¥è¿”å›çš„åªæ˜¯ä¸€ä¸ªæ—¶é—´cuo
 			tm* t = localtime(&tt);
 
 			int64_t i = *((int64_t*)&t);
